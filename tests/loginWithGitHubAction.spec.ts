@@ -11,8 +11,8 @@ test.describe('Login Tests', () => {
     test('Valid Login', async ({ loginPage }) => {
 
         await loginPage.login(
-    process.env.USERNAME!,
-    process.env.PASSWORD!
+    process.env.APP_USERNAME!,
+    process.env.APP_PASSWORD!
 );
 
         await loginPage.verifyLogin();
